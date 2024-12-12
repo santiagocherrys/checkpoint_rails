@@ -37,3 +37,4 @@ en:
     missing: "is missing!"
     wrong_file: "needs to be a jpeg or png!"
     wrong_size: "size needs to be less than 3MB"
+    error: "prohibited this imagec from being saved"

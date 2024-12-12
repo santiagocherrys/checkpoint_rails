@@ -8,3 +8,4 @@ es:
     missing: "campo vacio!"
     wrong_file: "tiene que ser jpeg o png!"
     wrong_size: "tamaño tiene que ser menor a 3MB"
+    error: "prohibido esta imagec para ser guardada"

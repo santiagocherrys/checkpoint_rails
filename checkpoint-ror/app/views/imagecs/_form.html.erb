@@ -1,7 +1,7 @@
 <%= form_with(model: imagec, class: "contents") do |form| %>
   <% if imagec.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
-      <h2><%= pluralize(imagec.errors.count, "error") %> prohibited this imagec from being saved:</h2>
+      <h2><%= pluralize(imagec.errors.count, "error") %> <%=t("imagecs.error")%>:</h2>
 
       <ul>
         <% imagec.errors.each do |error| %>
