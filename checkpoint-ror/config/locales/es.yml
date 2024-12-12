@@ -5,3 +5,5 @@ es:
     show_button: "Muestra esta imagec"
     new_imagec: "Nueva imagec"
     back_imagecs: "De vuelta a imagecs"
+    missing: "campo vacio!"
+    wrong_file: "tiene que ser jpeg o png!"

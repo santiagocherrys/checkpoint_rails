@@ -34,3 +34,5 @@ en:
     show_button: "show this imagec"
     new_imagec: "New imagec"
     back_imagecs: "Back to imagecs"
+    missing: "is missing!"
+    wrong_file: "needs to be a jpeg or png!"
