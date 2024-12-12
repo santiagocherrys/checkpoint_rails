@@ -65,6 +65,6 @@ class ImagecsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def imagec_params
-      params.require(:imagec).permit(:name, :description)
+      params.require(:imagec).permit(:name, :description, :avatar)
     end
 end

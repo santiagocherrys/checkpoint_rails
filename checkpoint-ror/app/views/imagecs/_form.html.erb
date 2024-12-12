@@ -12,18 +12,21 @@
   <% end %>
 
   <div class="my-5">
-    <label for="name" class="block text-sm/6 font-medium text-gray-900"><%= t("forms.name") %></label>
+    <label for="name" class="block text-sm/6 font-medium text-gray-900"><%= t("imagecs.name") %></label>
     <div class="mt-2">
       <%= form.text_field :name, class: "block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" %>
     </div>
   </div>
 
   <div class="my-5">
-    <label for="description" class="block text-sm/6 font-medium text-gray-900"><%= t("forms.description") %></label>
+    <label for="description" class="block text-sm/6 font-medium text-gray-900"><%= t("imagecs.description") %></label>
     <div class="mt-2">
       <%= form.text_area :description, rows: 4, class: "block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" %>
     </div>
   </div>
+
+  <%= form.label :avatar %>
+  <%= form.file_field :avatar %>
 
   <div class="inline">
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>

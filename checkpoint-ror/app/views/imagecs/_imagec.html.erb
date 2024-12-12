@@ -9,4 +9,11 @@
     <%= imagec.description %>
   </p>
 
+  <% if imagec.avatar.attached?%>
+    <div class="avatar">
+      <%= image_tag(url_for(imagec.avatar)) %>
+    </div>
+
+  <% end %>
+
 </div>
