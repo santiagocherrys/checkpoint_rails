@@ -28,4 +28,9 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  imagecs:
+    name: "Name"
+    description: "Description"
+    show_button: "show this imagec"
+    new_imagec: "New imagec"
+    back_imagecs: "Back to imagecs"

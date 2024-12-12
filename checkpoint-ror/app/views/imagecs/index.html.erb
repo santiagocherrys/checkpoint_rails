@@ -7,15 +7,19 @@
 
   <div class="flex justify-between items-center">
     <h1 class="font-bold text-4xl">Imagecs</h1>
-    <%= link_to "New imagec", new_imagec_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+    <%= link_to t("imagecs.new_imagec"), new_imagec_path, class: "bg-white py-2 px-5 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
   </div>
 
-  <div id="imagecs" class="min-w-full">
+  <div id="imagecs" class="mt-4 space-y-6 bg-lime-500">
     <% @imagecs.each do |imagec| %>
-      <%= render imagec %>
-      <p>
-        <%= link_to "Show this imagec", imagec, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-      </p>
+      <div style="background-color: #009999;" class="block max-w-sm p-6 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <%= render imagec %>
+
+        <div class="mt-4 flex justify-center">
+          <%= link_to t("imagecs.show_button"), imagec, class: "bg-gray-400 py-2 px-5 border border-gray-500 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>
+

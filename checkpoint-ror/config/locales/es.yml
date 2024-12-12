@@ -1,0 +1,7 @@
+es:
+  imagecs:
+    name: "Nombre"
+    description: "Descripción"
+    show_button: "Muestra esta imagec"
+    new_imagec: "Nueva imagec"
+    back_imagecs: "De vuelta a imagecs"
