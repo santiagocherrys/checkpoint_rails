@@ -24,6 +24,12 @@ class Imagec < ApplicationRecord
     unless avatar.content_type.in?(%w(image/jpeg image/png))
       errors.add(:avatar, I18n.t("imagecs.wrong_file"))
     end
+
+    #check if size is correct, can't be greater than 3MB
+    if avatar.blob.byte_size > 3.megabytes
+      errors.add(:avatar, I18n.t("imagecs.wrong_size"))
+    end
+
   end
   
 

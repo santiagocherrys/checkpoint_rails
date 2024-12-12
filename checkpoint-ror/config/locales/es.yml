@@ -7,3 +7,4 @@ es:
     back_imagecs: "De vuelta a imagecs"
     missing: "campo vacio!"
     wrong_file: "tiene que ser jpeg o png!"
+    wrong_size: "tamaño tiene que ser menor a 3MB"
