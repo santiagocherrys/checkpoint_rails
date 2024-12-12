@@ -1,0 +1,2 @@
+class Imagec < ApplicationRecord
+end
