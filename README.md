@@ -13,10 +13,10 @@ Repositorio checkpoint Ruby on Rails .
 
 * Configuration
 
-enviromental variables
-CLOUD_NAME=            (Cloud name cloudinary)
-APIKEY_CLOUDINARY=
-APIKEY_SECRET_CLOUDINARY=
+# enviromental variables
+- CLOUD_NAME=            (Cloud name cloudinary)
+- APIKEY_CLOUDINARY=
+- APIKEY_SECRET_CLOUDINARY=
 
 * Database
 for this project is used SQlite
